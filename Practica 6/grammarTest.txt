@@ -1,0 +1,6 @@
+goal := expr
+expr := term expr'
+expr' := + term expr' | - term expr' | lambda
+term := factor term'
+term' := x factor term' | / x factor term' | lambda
+factor := ( expr ) | num | name
